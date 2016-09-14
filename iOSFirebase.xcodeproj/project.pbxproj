@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		501243311D88CE5200CCE282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501243301D88CE5200CCE282 /* AppDelegate.swift */; };
-		501243331D88CE5200CCE282 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501243321D88CE5200CCE282 /* ViewController.swift */; };
 		501243361D88CE5200CCE282 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501243341D88CE5200CCE282 /* Main.storyboard */; };
 		501243381D88CE5200CCE282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 501243371D88CE5200CCE282 /* Assets.xcassets */; };
 		5012433B1D88CE5200CCE282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501243391D88CE5200CCE282 /* LaunchScreen.storyboard */; };
+		501243431D88CF1400CCE282 /* initialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501243421D88CF1400CCE282 /* initialTableViewController.swift */; };
+		501243451D88D2DE00CCE282 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501243441D88D2DE00CCE282 /* Person.swift */; };
+		501243471D88D68F00CCE282 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501243461D88D68F00CCE282 /* NetworkController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5012432D1D88CE5200CCE282 /* iOSFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		501243301D88CE5200CCE282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		501243321D88CE5200CCE282 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		501243351D88CE5200CCE282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		501243371D88CE5200CCE282 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5012433A1D88CE5200CCE282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5012433C1D88CE5200CCE282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		501243421D88CF1400CCE282 /* initialTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = initialTableViewController.swift; path = ../initialTableViewController.swift; sourceTree = "<group>"; };
+		501243441D88D2DE00CCE282 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		501243461D88D68F00CCE282 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +58,11 @@
 		5012432F1D88CE5200CCE282 /* iOSFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				501243421D88CF1400CCE282 /* initialTableViewController.swift */,
+				501243461D88D68F00CCE282 /* NetworkController.swift */,
 				501243301D88CE5200CCE282 /* AppDelegate.swift */,
-				501243321D88CE5200CCE282 /* ViewController.swift */,
 				501243341D88CE5200CCE282 /* Main.storyboard */,
+				501243441D88D2DE00CCE282 /* Person.swift */,
 				501243371D88CE5200CCE282 /* Assets.xcassets */,
 				501243391D88CE5200CCE282 /* LaunchScreen.storyboard */,
 				5012433C1D88CE5200CCE282 /* Info.plist */,
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				501243331D88CE5200CCE282 /* ViewController.swift in Sources */,
+				501243471D88D68F00CCE282 /* NetworkController.swift in Sources */,
+				501243451D88D2DE00CCE282 /* Person.swift in Sources */,
+				501243431D88CF1400CCE282 /* initialTableViewController.swift in Sources */,
 				501243311D88CE5200CCE282 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
