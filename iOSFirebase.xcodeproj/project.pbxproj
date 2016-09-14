@@ -14,6 +14,7 @@
 		501243431D88CF1400CCE282 /* initialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501243421D88CF1400CCE282 /* initialTableViewController.swift */; };
 		501243451D88D2DE00CCE282 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501243441D88D2DE00CCE282 /* Person.swift */; };
 		501243471D88D68F00CCE282 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501243461D88D68F00CCE282 /* NetworkController.swift */; };
+		501243491D88D9CF00CCE282 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501243481D88D9CF00CCE282 /* PersonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		501243421D88CF1400CCE282 /* initialTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = initialTableViewController.swift; path = ../initialTableViewController.swift; sourceTree = "<group>"; };
 		501243441D88D2DE00CCE282 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		501243461D88D68F00CCE282 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		501243481D88D9CF00CCE282 /* PersonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				501243421D88CF1400CCE282 /* initialTableViewController.swift */,
 				501243461D88D68F00CCE282 /* NetworkController.swift */,
+				501243481D88D9CF00CCE282 /* PersonController.swift */,
 				501243301D88CE5200CCE282 /* AppDelegate.swift */,
 				501243341D88CE5200CCE282 /* Main.storyboard */,
 				501243441D88D2DE00CCE282 /* Person.swift */,
@@ -144,6 +147,7 @@
 				501243471D88D68F00CCE282 /* NetworkController.swift in Sources */,
 				501243451D88D2DE00CCE282 /* Person.swift in Sources */,
 				501243431D88CF1400CCE282 /* initialTableViewController.swift in Sources */,
+				501243491D88D9CF00CCE282 /* PersonController.swift in Sources */,
 				501243311D88CE5200CCE282 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

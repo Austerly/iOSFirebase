@@ -12,18 +12,22 @@ class initialTableViewController: UITableViewController {
 
     @IBOutlet weak var namedTextField: UITextField!
     
-    var names: [String] = [] {
+    var names: [Person] = [] {
         didSet {
             //This code will fire whenever the names array changes
             print("names array changed")
             
             //Reload the tableView because the array has changed
+            dispatch_async(dispatch_get_main_queue()) {
+                self.tableView.reloadData()
+            }
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.updatePeopleList()
         
         
         // Uncomment the following line to preserve selection between presentations
@@ -32,7 +36,13 @@ class initialTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-
+    
+    private func updatePeopleList() {
+        PersonController.getPeople { (people) in
+            self.names = people
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -40,7 +50,15 @@ class initialTableViewController: UITableViewController {
 
     // MARK: - Table view data source
     @IBAction func addButtonTapped(sender: AnyObject) {
-        print(self.namedTextField.text!)
+        
+        PersonController.addPerson(self.namedTextField.text!) { (success) in
+            if success {
+                print("Yay: someone was added")
+                self.updatePeopleList()
+            } else {
+                print("Adding person failed")
+            }
+        }
     }
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -59,7 +77,9 @@ class initialTableViewController: UITableViewController {
         // Configure the cell...
         let cell = tableView.dequeueReusableCellWithIdentifier("nameCell", forIndexPath: indexPath)
         
-        cell.textLabel?.text = self.names[indexPath.row]
+        let person = self.names[indexPath.row]
+        cell.textLabel?.text = person.firstName
+        
         return cell
     }
  
